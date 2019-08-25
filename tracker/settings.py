@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'samples.apps.SamplesConfig',
+    'changelog.apps.ChangelogConfig',
 ]
 
 MIDDLEWARE = [
@@ -81,6 +82,10 @@ DATABASES = {
     }
 }
 
+TRACKED_MODELS = (
+    'samples.User',
+    'samples.Organization',
+)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
